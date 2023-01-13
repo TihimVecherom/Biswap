@@ -3696,6 +3696,10 @@ html {
   display: none;
 }
 
+._wrapper-bg-active {
+  overflow-y: hidden !important;
+}
+
 ._wrapper-bg-active::after {
   top: 0px !important;
   opacity: 1 !important;
