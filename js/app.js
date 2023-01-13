@@ -121,10 +121,18 @@
     const menuButton = document.querySelector(".menu__button");
     const menuBody = document.querySelector(".menu__body");
     const wrapBg = document.querySelector(".wrapper");
+    const bodyPage = document.querySelector("body");
     if (menuButton) menuButton.addEventListener("click", (function(e) {
         menuButton.classList.toggle("_icon-active");
         if (menuBody) menuBody.classList.toggle("_menu-active");
         if (wrapBg) wrapBg.classList.toggle("_wrapper-bg-active");
+        if (bodyPage) bodyPage.classList.toggle("_wrapper-scroll-hidden");
+    }));
+    if (menuBody) menuBody.addEventListener("click", (function(e) {
+        menuBody.classList.remove("_menu-active");
+        if (menuButton) menuButton.classList.remove("_icon-active");
+        if (wrapBg) wrapBg.classList.remove("_wrapper-bg-active");
+        if (bodyPage) bodyPage.classList.remove("_wrapper-scroll-hidden");
     }));
     const menuBodyFooter = document.querySelector(".menu__footer");
     const menuButtonFooter = document.querySelector(".menu__button-footer");
@@ -132,6 +140,13 @@
         menuButtonFooter.classList.toggle("_icon-active");
         if (menuBodyFooter) menuBodyFooter.classList.toggle("_menu-active-footer");
         if (wrapBg) wrapBg.classList.toggle("_wrapper-bg-active");
+        if (bodyPage) bodyPage.classList.toggle("_wrapper-scroll-hidden");
+    }));
+    if (menuBodyFooter) menuBodyFooter.addEventListener("click", (function(e) {
+        menuBodyFooter.classList.remove("_menu-active-footer");
+        if (menuButtonFooter) menuButtonFooter.classList.remove("_icon-active");
+        if (wrapBg) wrapBg.classList.remove("_wrapper-bg-active");
+        if (bodyPage) bodyPage.classList.remove("_wrapper-scroll-hidden");
     }));
     window["FLS"] = true;
     isWebp();

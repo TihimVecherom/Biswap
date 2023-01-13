@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230112201047">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230113094422">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,19 +38,19 @@
 						</button>
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item"><a class="menu__link" href="">Home <span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<li class="menu__item"><a class="menu__link" href="#home">Home <span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 											</svg>
 										</span></a></li>
-								<li class="menu__item"><a class="menu__link" href="#">About<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<li class="menu__item"><a class="menu__link" href="#about">About<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 											</svg>
 										</span></a></li>
-								<li class="menu__item"><a class="menu__link" href="#">Referral program<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<li class="menu__item"><a class="menu__link" href="#ref">Referral program<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -89,7 +89,7 @@
 		</header>
 		<main class="page">
 
-			<div class="first">
+			<div id="home" class="first">
 				<div class="first__container">
 					<div class="first__content">
 						<div class="first__block-title">
@@ -127,7 +127,7 @@
 				</div>
 			</div>
 
-			<div class="investments">
+			<div id="about" class="investments">
 				<div class="investments__container">
 					<div class="investments__title title"> <span class="text-line"></span> investments</div>
 					<div class="investments__items">
@@ -249,7 +249,7 @@
 			</div>
 
 			<div class="referral">
-				<div class="referral__container">
+				<div id="ref" class="referral__container">
 					<div class="referral__title title">referral program <span class="text-line"></span></div>
 					<div class="referral__content">
 						<div class="referral__block-items">
@@ -324,8 +324,89 @@
 							</div>
 						</div>
 					</div>
+					<div class="referal__links">
+						<span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 3H16.504C18.987 3 21 5.013 21 7.496V16.505C21 18.987 18.987 21 16.504 21H7.496C5.013 21 3 18.987 3 16.504V7.5C3 5.015 5.015 3 7.5 3V3Z" stroke="#6866F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M6.978 13.818L11.088 10.735L12.828 13.326L17.021 10.182" stroke="#6866F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</span>
+						<a class="referal__link" href="#referral">Referral reward statistics</a>
+					</div>
 				</div>
 			</div>
+
+			<div id="referral" class="popup">
+				<div class="popup__wrap-bg">
+					<a class="popup__fix" href="#fix"></a>
+					<div class="popup__content">
+						<div class="popup__wrp-close">
+							<a class="popup__close" href="#fix"></a>
+						</div>
+						<div class="popup__title">referral rewards</div>
+						<div class="popup__withdrawls withdrawls">
+							<div class="withdrawls__wrap">
+								<div class="withdrawls__block-title">
+									<div class="withdrawls__title">Level:</div>
+									<div class="withdrawls__title">User:</div>
+									<div class="withdrawls__title">Amount:</div>
+									<div class="withdrawls__title">Status:</div>
+								</div>
+								<div class="withdrawls__items">
+									<div class="withdrawls__item">
+										<div class="withdrawls__item-type">1 Level</div>
+										<div class="withdrawls__item-data">TLJst.....CHKf</div>
+										<div class="withdrawls__item-amount">
+											<img src="img/main/investments/coint.svg" alt="point">
+											389.02 Matic
+										</div>
+										<div class="withdrawls__item-status">Complete</div>
+									</div>
+									<div class="withdrawls__item">
+										<div class="withdrawls__item-type">2 Level</div>
+										<div class="withdrawls__item-data">TLJst.....CHKf</div>
+										<div class="withdrawls__item-amount">
+											<img src="img/main/investments/coint.svg" alt="point">
+											389.02 Matic
+										</div>
+										<div class="withdrawls__item-status satus-red">Cancel</div>
+									</div>
+									<div class="withdrawls__item">
+										<div class="withdrawls__item-type">1 Level</div>
+										<div class="withdrawls__item-data">TLJst.....CHKf</div>
+										<div class="withdrawls__item-amount">
+											<img src="img/main/investments/coint.svg" alt="point">
+											389.02 Matic
+										</div>
+										<div class="withdrawls__item-status">Complete</div>
+									</div>
+									<div class="withdrawls__item">
+										<div class="withdrawls__item-type">2 Level</div>
+										<div class="withdrawls__item-data">TLJst.....CHKf</div>
+										<div class="withdrawls__item-amount">
+											<img src="img/main/investments/coint.svg" alt="point">
+											389.02 Matic
+										</div>
+										<div class="withdrawls__item-status satus-red">Cancel</div>
+									</div>
+									<div class="withdrawls__item">
+										<div class="withdrawls__item-type">1 Level</div>
+										<div class="withdrawls__item-data">TLJst.....CHKf</div>
+										<div class="withdrawls__item-amount">
+											<img src="img/main/investments/coint.svg" alt="point">
+											389.02 Matic
+										</div>
+										<div class="withdrawls__item-status">Complete</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
 
 			<div class="how">
 				<div class="how__container">
@@ -428,20 +509,23 @@
 							</span>
 						</button>
 						<nav class="menu__footer">
+							<div class="first__picture footer-picture">
+								<img src="img/main/first/phone.png" alt="phone">
+							</div>
 							<ul class="menu__list footer-list">
-								<li class="menu__item"><a class="menu__link" href="#">Home <span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<li class="menu__item"><a class="menu__link" href="#home">Home <span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 											</svg>
 										</span></a></li>
-								<li class="menu__item"><a class="menu__link" href="#">About<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<li class="menu__item"><a class="menu__link" href="#about">About<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 											</svg>
 										</span></a></li>
-								<li class="menu__item"><a class="menu__link" href="#">Referral program<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<li class="menu__item"><a class="menu__link" href="#ref">Referral program<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 												<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 												<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -479,7 +563,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230112201047"></script>
+	<script src="js/app.min.js?_v=20230113094422"></script>
 </body>
 
 </html>
