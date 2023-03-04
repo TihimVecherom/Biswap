@@ -1,793 +1,221 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
-	<title>Главная</title>
 	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230113141217">
-	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «biswap»</title>
 </head>
 
 <body>
-	<div class="wrapper">
-		<header class="header">
-			<div id="fix" class="fix"></div>
-			<div class="header__container">
-				<div class="header__content">
-					<div class="header__block-logo">
-						<a class="logo" href="#">
-							<span class="logo__brand">
-								<img src="img/header/logo.svg" alt="logo">
-							</span>
-							<span class="logo__text">
-								<img src="img/header/logo-text.svg" alt="logo">
-							</span>
-						</a>
-					</div>
-					<div class="header__menu menu">
-						<button class="menu__button">
-							<span class="menu__icons">
-								<span class="arrow-icon">
-									<span class="arrow-icon__tip"></span>
-								</span>
-							</span>
-						</button>
+	<div class="rootpage">
+		<h1>Вёрстка «biswap»</h1>
 
+		<h2>Готовые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Главная</a></li>
+			<li><a target="_blank" href="popups.html">Попапы</a></li>
+		</ol>
 
-						<div class="menu__body-wrap">
-							<nav class="menu__body">
-								<div class="first__picture header-picture">
-									<div class="first__block-picture">
-										<div class="first__picture-block-text">
-											<div class="text-procent">
-												<div class="text-procent__num">5%</div>
-												<div class="text-procent__text">everyday <span class="yellow-color">60 days</span></div>
-											</div>
-										</div>
-										<div class="first__picture">
-											<img src="img/main/first/phone.png" alt="phone">
-										</div>
-									</div>
-								</div>
-								<ul class="menu__list">
-									<li class="menu__item"><a class="menu__link" href="#home">Home <span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												</svg>
-											</span></a></li>
-									<li class="menu__item"><a class="menu__link" href="#about">About<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												</svg>
-											</span></a></li>
-									<li class="menu__item"><a class="menu__link" href="#ref">Referral program<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												</svg>
-											</span></a></li>
-									<li class="menu__item"><a class="menu__link" href="#">Contacts<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												</svg>
-											</span></a></li>
-									<li class="menu__item"><a class="menu__link" href="#">FaQ<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												</svg>
-											</span></a></li>
-
-								</ul>
-
-							</nav>
-						</div>
-
-					</div>
-
-					<div class="header__buttons">
-						<a data-da=".menu__list , 550" class="menu__button-support" href="#">
-							<img src="img/header/telegram.svg" alt="telegram">
-							<span>Support</span>
-						</a>
-						<a class="header__button" href="#">
-							<img src="img/header/fox.jpg" alt="fox">
-							<span>Connect wallet</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</header>
-		<main class="page">
-
-			<div id="home" class="first">
-				<div class="first__container">
-					<div class="first__content">
-						<div class="first__block-title">
-							<div class="first__title">Smart</div>
-							<div class="first__title veolet">investment</div>
-
-							<div class="first__title">a matic</div>
-							<div class="first__block-text">
-								<div class="first__text">Decentralized investment fund with an open <a href="#">smart contract</a></div>
-							</div>
-							<div class="first__title">cryptocurrency</div>
-						</div>
-						<div class="first__buttons">
-							<a class="first__button" href="#time"><span>
-									Start investment <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15.0493 5.94299L1.04932 5.94299" stroke="#080828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-										<path d="M10.0493 10.943L15.0493 5.94299" stroke="#080828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-										<path d="M10.0493 0.942993L15.0493 5.94299" stroke="#080828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									</svg>
-								</span></a>
-						</div>
-					</div>
-					<div class="first__block-picture">
-						<div class="first__picture-block-text">
-							<div class="text-procent">
-								<div class="text-procent__num">5%</div>
-								<div class="text-procent__text">everyday <span class="yellow-color">60 days</span></div>
-							</div>
-						</div>
-						<div class="first__picture">
-							<img src="img/main/first/phone.png" alt="phone">
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="time" class="popup popup-promo-content">
-				<div class="popup__wrap-bg">
-					<a class="popup__fix" href="#fix"></a>
-					<div class="popup__content popup-promo-content">
-						<div class="popup__wrp-close">
-							<a class="popup__close" href="#fix"></a>
-						</div>
-						<div class="popup__title">Time pool</div>
-						<div class="popup__time time-pool">
-							<div class="time-pool__text">If thete are no purchases of miners in the amount of $1 or more within an hour after you, then the entire miners amount will automaticakky be credited be credited to your account. 3% of each purchase of INVERTEX Miners if transferred to TIME POOL.</div>
-							<div class="time-pool__block-sum">
-								<div class="time-pool__icon-sum">
-									<img src="img/main/popups/time/dollar.svg" alt="icon">
-								</div>
-								<div class="time-pool__sum">10 000 USD</div>
-							</div>
-							<div class="time-pool__timer">00:10:18</div>
-							<div class="time-pool__info">
-								<div class="time-pool__info-text">Last purchase was by:</div>
-								<div class="time-pool__info-block-amount">
-									<div class="time-pool__info-amount-text">RosyFinance -</div>
-									<div class="time-pool__info-amount">
-										<img src="img/main/popups/time/dollar.svg" alt="icon">
-										<div class="time-pool__info-amount-sum">109.39 USD</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-
-			<div id="about" class="investments">
-				<div class="investments__container">
-					<div class="investments__title title"> <span class="text-line"></span> investments</div>
-					<div class="investments__items">
-						<div class="investments__item">
-							<div class="investments__item-content">
-								<div class="investments__item-title">You wallet:</div>
-								<div class="investments__block-amount">
-
-									<div class="investments__amount amount-grey">0xb931...3ab8b5</div>
-								</div>
-							</div>
-						</div>
-						<div class="investments__item">
-							<div class="investments__item-content">
-								<div class="investments__item-title">Wallet balance:</div>
-								<div class="investments__block-amount ">
-									<div class="investments__item-icon">
-										<img src="img/main/investments/coint.svg" alt="icon">
-									</div>
-									<div class="investments__amount">2893783.02 Matic</div>
-								</div>
-							</div>
-						</div>
-						<div class="investments__item">
-							<div class="investments__item-content">
-								<div class="investments__item-title">Total paid:</div>
-								<div class="investments__block-amount">
-									<div class="investments__item-icon">
-										<img src="img/main/investments/coint.svg" alt="icon">
-									</div>
-									<div class="investments__amount">2883.02 Matic</div>
-								</div>
-							</div>
-						</div>
-						<div class="investments__item">
-							<div class="investments__item-content">
-								<div class="investments__item-title">Referral rewards:</div>
-								<div class="investments__block-amount">
-									<div class="investments__item-icon">
-										<img src="img/main/investments/coint.svg" alt="icon">
-									</div>
-									<div class="investments__amount">389.02 Matic</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="investments__cards">
-						<div class="investments__card card-procent">
-							<img class="investments__card-bg-1" src="img/main/investments/cards/card/1.png" alt="bg">
-							<div class="investments__card-procent">
-								<div class="text-procent">
-									<div class="text-procent__num">5%</div>
-									<div class="text-procent__text">everyday <span class="yellow-color">60 days</span></div>
-								</div>
-							</div>
-							<div class="investments__card-count">
-								<button class="investments__card-count-icon">
-									<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M14.583 5.06134C14.2448 4.86885 13.8101 4.86885 13.4236 5.06134L10.7184 6.64938L8.88267 7.65995L6.22574 9.24799C5.88759 9.44048 5.45282 9.44048 5.06636 9.24799L2.98912 7.99681C2.65097 7.80432 2.40943 7.41934 2.40943 6.98624V4.58012C2.40943 4.19514 2.60266 3.81016 2.98912 3.56955L5.06636 2.36649C5.40451 2.174 5.83928 2.174 6.22574 2.36649L8.30298 3.61767C8.64113 3.81016 8.88267 4.19514 8.88267 4.62824V6.21628L10.7184 5.15759V3.52143C10.7184 3.13645 10.5251 2.75147 10.1387 2.51086L6.27405 0.249104C5.9359 0.0566139 5.50113 0.0566139 5.11466 0.249104L1.15342 2.55898C0.766962 2.75147 0.57373 3.13645 0.57373 3.52143V8.04493C0.57373 8.42991 0.766962 8.81489 1.15342 9.0555L5.06636 11.3173C5.40451 11.5097 5.83928 11.5097 6.22574 11.3173L8.88267 9.77734L10.7184 8.71865L13.3753 7.17873C13.7135 6.98624 14.1482 6.98624 14.5347 7.17873L16.6119 8.38179C16.9501 8.57428 17.1916 8.95926 17.1916 9.39236V11.7985C17.1916 12.1835 16.9984 12.5684 16.6119 12.809L14.583 14.0121C14.2448 14.2046 13.8101 14.2046 13.4236 14.0121L11.3464 12.809C11.0082 12.6166 10.7667 12.2316 10.7667 11.7985V10.2586L8.93098 11.3173V12.9053C8.93098 13.2903 9.12421 13.6753 9.51067 13.9159L13.4236 16.1776C13.7618 16.3701 14.1965 16.3701 14.583 16.1776L18.4959 13.9159C18.8341 13.7234 19.0756 13.3384 19.0756 12.9053V8.33367C19.0756 7.94869 18.8824 7.56371 18.4959 7.3231L14.583 5.06134Z" fill="white" />
-									</svg>
-								</button>
-								<input class="investments__card-invest" placeholder="20 000 ">
-
-
-							</div>
-							<div class="investments__card-buttons">
-								<a class="investments__card-button button-card" href="#calculator"><span>Invest now</span></a>
-							</div>
-							<div class="investments__card-items items-cards">
-								<div class="items-cards__item">
-									<div class="items-card__title">1000 Matic</div>
-									<div class="items-card__text">Min investment:</div>
-								</div>
-								<div class="items-cards__item">
-									<div class="items-card__title">10 Matic</div>
-									<div class="items-card__text">Max investment:</div>
-								</div>
-							</div>
-						</div>
-						<div class="investments__card card-claim">
-							<img class="investments__card-bg-2" src="img/main/investments/cards/card/2.png" alt="bg">
-							<div class="card-claim__block-count">
-								<div class="card-claim__count-title">Avaible dividends:</div>
-								<div class="card-claim__count-block-number">
-									<div class="card-claim__icon-count">
-										<img src="img/main/investments/coint.svg" alt="icon">
-									</div>
-									<div class="card-claim__count-number">5.748763 <span>Matic</span> </div>
-								</div>
-							</div>
-							<div class="card-claim__buttons">
-								<a class="card-claim__button button-card" href="#"><span>Claim dividends</span></a>
-							</div>
-							<div class="card-claim__items">
-								<div class="card-claim__item">
-									<div class="card-claim__type">Date:</div>
-									<div class="card-claim__info">11.10.2022</div>
-								</div>
-								<div class="card-claim__item">
-									<div class="card-claim__type">Invested:</div>
-									<div class="card-claim__info">100 Matic</div>
-								</div>
-								<div class="card-claim__item">
-									<div class="card-claim__type">Paid:</div>
-									<div class="card-claim__info">2000 Matic</div>
-								</div>
-							</div>
-						</div>
-						<div class="investments__card card-future">
-							<div class="card-future__content">
-								<div class="card-future__icon"><svg width="58" height="51" viewBox="0 0 58 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M43.7111 16.115C42.6692 15.5219 41.3296 15.5219 40.1388 16.115L31.8037 21.0079L26.1476 24.1216L17.9613 29.0146C16.9194 29.6077 15.5798 29.6077 14.3891 29.0146L7.98883 25.1595C6.94693 24.5665 6.20271 23.3803 6.20271 22.0458V14.6323C6.20271 13.4461 6.79808 12.2599 7.98883 11.5186L14.3891 7.81178C15.431 7.21869 16.7705 7.21869 17.9613 7.81178L24.3615 11.6668C25.4034 12.2599 26.1476 13.4461 26.1476 14.7805V19.6735L31.8037 16.4115V11.3703C31.8037 10.1841 31.2083 8.99795 30.0175 8.25659L18.1101 1.28783C17.0682 0.694746 15.7286 0.694746 14.5379 1.28783L2.3328 8.40486C1.14206 8.99795 0.546692 10.1841 0.546692 11.3703V25.3078C0.546692 26.494 1.14206 27.6802 2.3328 28.4215L14.3891 35.3903C15.431 35.9834 16.7705 35.9834 17.9613 35.3903L26.1476 30.6456L31.8037 27.3836L39.99 22.6389C41.0319 22.0458 42.3715 22.0458 43.5622 22.6389L49.9625 26.3457C51.0044 26.9388 51.7486 28.125 51.7486 29.4594V36.873C51.7486 38.0592 51.1532 39.2453 49.9625 39.9867L43.7111 43.6935C42.6692 44.2866 41.3296 44.2866 40.1388 43.6935L33.7386 39.9867C32.6967 39.3936 31.9525 38.2074 31.9525 36.873V32.1283L26.2965 35.3903V40.2832C26.2965 41.4694 26.8918 42.6556 28.0826 43.3969L40.1388 50.3657C41.1807 50.9588 42.5203 50.9588 43.7111 50.3657L55.7673 43.3969C56.8092 42.8038 57.5534 41.6177 57.5534 40.2832V26.1974C57.5534 25.0113 56.9581 23.8251 55.7673 23.0837L43.7111 16.115Z" fill="#8247E5" />
-									</svg></div>
-								<div class="card-future__text">Future deposit</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="calculator" class="popup">
-				<div class="popup__wrap-bg">
-					<a class="popup__fix" href="#fix"></a>
-					<div class="popup__content">
-						<div class="popup__wrp-close">
-							<a class="popup__close" href="#fix"></a>
-						</div>
-						<div class="popup__title">calculator</div>
-						<div class="popup__calc-content calculator">
-
-							<div class="calculator__block-invest">
-								<div class="calculator__decor">
-									<img src="img/main/popups/calculator/coint.svg" alt="icon">
-								</div>
-								<div class="calculator__block-input">
-									<button class="calculator__invest-icon">
-										<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M14.583 5.06134C14.2448 4.86885 13.8101 4.86885 13.4236 5.06134L10.7184 6.64938L8.88267 7.65995L6.22574 9.24799C5.88759 9.44048 5.45282 9.44048 5.06636 9.24799L2.98912 7.99681C2.65097 7.80432 2.40943 7.41934 2.40943 6.98624V4.58012C2.40943 4.19514 2.60266 3.81016 2.98912 3.56955L5.06636 2.36649C5.40451 2.174 5.83928 2.174 6.22574 2.36649L8.30298 3.61767C8.64113 3.81016 8.88267 4.19514 8.88267 4.62824V6.21628L10.7184 5.15759V3.52143C10.7184 3.13645 10.5251 2.75147 10.1387 2.51086L6.27405 0.249104C5.9359 0.0566139 5.50113 0.0566139 5.11466 0.249104L1.15342 2.55898C0.766962 2.75147 0.57373 3.13645 0.57373 3.52143V8.04493C0.57373 8.42991 0.766962 8.81489 1.15342 9.0555L5.06636 11.3173C5.40451 11.5097 5.83928 11.5097 6.22574 11.3173L8.88267 9.77734L10.7184 8.71865L13.3753 7.17873C13.7135 6.98624 14.1482 6.98624 14.5347 7.17873L16.6119 8.38179C16.9501 8.57428 17.1916 8.95926 17.1916 9.39236V11.7985C17.1916 12.1835 16.9984 12.5684 16.6119 12.809L14.583 14.0121C14.2448 14.2046 13.8101 14.2046 13.4236 14.0121L11.3464 12.809C11.0082 12.6166 10.7667 12.2316 10.7667 11.7985V10.2586L8.93098 11.3173V12.9053C8.93098 13.2903 9.12421 13.6753 9.51067 13.9159L13.4236 16.1776C13.7618 16.3701 14.1965 16.3701 14.583 16.1776L18.4959 13.9159C18.8341 13.7234 19.0756 13.3384 19.0756 12.9053V8.33367C19.0756 7.94869 18.8824 7.56371 18.4959 7.3231L14.583 5.06134Z" fill="white" />
-										</svg>
-									</button>
-									<input class="calculator__invest-input" type="text" placeholder="20 000">
-								</div>
-								<a class="calculator__button" href="#"><span>Invest now</span></a>
-								<div class="calculator__invest-info info-invest">
-									<div class="info-invest__item">
-										<div class="info-invest__title">10 Matic</div>
-										<div class="info-invest__text">Min investment: </div>
-									</div>
-									<div class="info-invest__item">
-										<div class="info-invest__title">1000 Matic</div>
-										<div class="info-invest__text">Max investment:</div>
-									</div>
-								</div>
-							</div>
-							<div class="calculator__block-items">
-								<div class="calculator__items">
-									<div class="calculator__item">
-										<div class="calculator__item-type">Total amount:</div>
-										<div class="calculator__item-block">
-											<div class="calculator__item-icon">
-												<img src="img/main/investments/coint.svg" alt="icon">
-											</div>
-											<div class="calculator__item-text">57463<span>Matic</span></div>
-										</div>
-									</div>
-									<div class="calculator__item">
-										<div class="calculator__item-type">Total return:</div>
-										<div class="calculator__item-block">
-											<div class="calculator__item-text">200%</div>
-										</div>
-									</div>
-									<div class="calculator__item">
-										<div class="calculator__item-type">Investment term:</div>
-										<div class="calculator__item-block">
-											<div class="calculator__item-text">10 days</div>
-										</div>
-									</div>
-								</div>
-								<div class="calculator__items">
-									<div class="calculator__item">
-										<div class="calculator__item-type">Per hour:</div>
-										<div class="calculator__item-block">
-											<div class="calculator__item-icon">
-												<img src="img/main/investments/coint.svg" alt="icon">
-											</div>
-											<div class="calculator__item-text">57463<span>Matic</span></div>
-										</div>
-									</div>
-									<div class="calculator__item">
-										<div class="calculator__item-type">Per Day:</div>
-										<div class="calculator__item-block">
-											<div class="calculator__item-icon">
-												<img src="img/main/investments/coint.svg" alt="icon">
-											</div>
-											<div class="calculator__item-text">57463<span>Matic</span></div>
-										</div>
-									</div>
-									<div class="calculator__item">
-										<div class="calculator__item-type">Per in 10 days:</div>
-										<div class="calculator__item-block">
-											<div class="calculator__item-icon">
-												<img src="img/main/investments/coint.svg" alt="icon">
-											</div>
-											<div class="calculator__item-text">57463<span>Matic</span></div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-
-			<div class="referral">
-				<div id="ref" class="referral__container">
-					<div class="referral__title title">referral program <span class="text-line"></span></div>
-					<div class="referral__content">
-						<div class="referral__block-items">
-							<div class="referral__copy-link copy-link">
-								<div class="copy-link__title">My Referral Link:</div>
-								<div class="copy-link__block-copy">
-									<input class="copy-link__my" placeholder="ttps://hyip.org/reg=vladnovsky123">
-									<a data-da=".copy-link , 767.98" class="copy-link__button-link" href="#promo"><span>Promo tools</span></a>
-									<button class="copy-link__button "><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect x="8.68936" y="8.84235" width="16.5524" height="16.5524" rx="2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-											<path d="M8.68937 20.6655H6.32475C5.01881 20.6655 3.96013 19.6068 3.96013 18.3008V6.47774C3.96013 5.17179 5.01881 4.11311 6.32475 4.11311H18.1479C19.4538 4.11311 20.5125 5.17179 20.5125 6.47774V8.84236" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-										</svg></button>
-								</div>
-							</div>
-							<div class="referral__items">
-								<div class="referral__item">
-									<div class="referral__item-title">1 level</div>
-									<div class="referral__item-procent">7%</div>
-									<div class="referral__block-amount">
-										<div class="referral__block-amount-title">284 referrals</div>
-										<div class="referral__amount">
-											<div class="referral__amount-icon">
-												<img src="img/main/referral/coint.svg" alt="icon">
-											</div>
-											<div class="referral__amount-count">57463 <span>Matic</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="referral__item">
-									<div class="referral__item-title">2 level</div>
-									<div class="referral__item-procent">3%</div>
-									<div class="referral__block-amount">
-										<div class="referral__block-amount-title">284 referrals</div>
-										<div class="referral__amount">
-											<div class="referral__amount-icon">
-												<img src="img/main/referral/coint.svg" alt="icon">
-											</div>
-											<div class="referral__amount-count">57463 <span>Matic</span></div>
-										</div>
-									</div>
-								</div>
-								<div class="referral__item">
-									<div class="referral__item-title">Total</div>
-									<div class="referral__item-procent">2849</div>
-									<div class="referral__block-amount">
-										<div class="referral__block-amount-title">Total profit</div>
-										<div class="referral__amount">
-											<div class="referral__amount-icon">
-												<img src="img/main/referral/coint.svg" alt="icon">
-											</div>
-											<div class="referral__amount-count">57463 <span>Matic</span></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="referral__card card-referral">
-							<img class="card-referral__picture" src="img/main/referral/1.png" alt="picture">
-							<div class="card-referral__content">
-								<div class="card-referral__block-amount">
-									<div class="card-referral__title-count">Avaible profit</div>
-									<div class="card-referral__block-count">
-										<div class="card-referral__icon">
-											<img src="img/main/referral/coint.svg" alt="icon">
-										</div>
-										<div class="card-referral__count">5748763 <span>Matic</span></div>
-									</div>
-									<div class="referral__buttons">
-										<a class="referral__button" href="#"><span>Withdraw</span>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="referal__links">
-						<span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 3H16.504C18.987 3 21 5.013 21 7.496V16.505C21 18.987 18.987 21 16.504 21H7.496C5.013 21 3 18.987 3 16.504V7.5C3 5.015 5.015 3 7.5 3V3Z" stroke="#6866F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-								<path d="M6.978 13.818L11.088 10.735L12.828 13.326L17.021 10.182" stroke="#6866F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-							</svg>
-						</span>
-						<a class="referal__link" href="#referral">Referral reward statistics</a>
-					</div>
-				</div>
-			</div>
-
-			<div id="promo" class="popup popup-promo-content">
-				<div class="popup__wrap-bg">
-					<a class="popup__fix" href="#fix"></a>
-					<div class="popup__content popup-promo-content">
-						<div class="popup__wrp-close">
-							<a class="popup__close" href="#fix"></a>
-						</div>
-						<div class="popup__title">promo material</div>
-						<div class="popup__promo promo">
-							<div class="promo__content ">
-								<div class="promo__block-items items-left">
-									<div class="promo__items ">
-										<button class="promo__item promo-item-active"><span>125х125</span></button>
-										<div class="promo-item__line"></div>
-									</div>
-									<div class="promo__items">
-										<button class="promo__item"><span>240x400</span></button>
-										<div class="promo-item__line"></div>
-									</div>
-									<div class="promo__items">
-										<button class="promo__item"><span>300x300</span></button>
-										<div class="promo-item__line"></div>
-									</div>
-								</div>
-								<div class="promo__picture">
-									<img src="img/main/popups/promo/1.png" alt="picture">
-								</div>
-								<div class="promo__block-items items-right">
-									<div class="promo__items">
-										<div class="promo-item__line"></div>
-										<button class="promo__item"><span>486x60</span></button>
-									</div>
-									<div class="promo__items">
-										<div class="promo-item__line"></div>
-										<button class="promo__item"><span>728x90</span></button>
-									</div>
-
-								</div>
-							</div>
-							<div class="promo__block-copy promo-copy">
-								<div class="promo-copy__title"> Your link to banner <span>125X125</span></div>
-								<div class="promo-copy__block">
-									<input class="promo-copy__text-link" placeholder="ahref=https^////x2tron.pro///referal=../wvrwiveGnnvdnvsdnsnvdnsndafdghdty jthfgdhgfvnvsnvnsdvndin...">
-
-									<button class="promo-copy__button">
-										<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<rect x="8.68936" y="8.84235" width="16.5524" height="16.5524" rx="2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-											<path d="M8.68937 20.6655H6.32475C5.01881 20.6655 3.96013 19.6068 3.96013 18.3008V6.47774C3.96013 5.17179 5.01881 4.11311 6.32475 4.11311H18.1479C19.4538 4.11311 20.5125 5.17179 20.5125 6.47774V8.84236" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-										</svg>
-									</button>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-
-			<div id="referral" class="popup">
-				<div class="popup__wrap-bg">
-					<a class="popup__fix" href="#fix"></a>
-					<div class="popup__content">
-						<div class="popup__wrp-close">
-							<a class="popup__close" href="#fix"></a>
-						</div>
-						<div class="popup__title">referral rewards</div>
-						<div class="popup__withdrawls withdrawls">
-							<div class="withdrawls__wrap">
-								<div class="withdrawls__block-title">
-									<div class="withdrawls__title">Level:</div>
-									<div class="withdrawls__title">User:</div>
-									<div class="withdrawls__title">Amount:</div>
-									<div class="withdrawls__title">Status:</div>
-								</div>
-								<div class="withdrawls__items">
-									<div class="withdrawls__item">
-										<div class="withdrawls__item-type">1 Level</div>
-										<div class="withdrawls__item-data">TLJst.....CHKf</div>
-										<div class="withdrawls__item-amount">
-											<img src="img/main/investments/coint.svg" alt="point">
-											389.02 Matic
-										</div>
-										<div class="withdrawls__item-status">Complete</div>
-									</div>
-									<div class="withdrawls__item">
-										<div class="withdrawls__item-type">2 Level</div>
-										<div class="withdrawls__item-data">TLJst.....CHKf</div>
-										<div class="withdrawls__item-amount">
-											<img src="img/main/investments/coint.svg" alt="point">
-											389.02 Matic
-										</div>
-										<div class="withdrawls__item-status satus-red">Cancel</div>
-									</div>
-									<div class="withdrawls__item">
-										<div class="withdrawls__item-type">1 Level</div>
-										<div class="withdrawls__item-data">TLJst.....CHKf</div>
-										<div class="withdrawls__item-amount">
-											<img src="img/main/investments/coint.svg" alt="point">
-											389.02 Matic
-										</div>
-										<div class="withdrawls__item-status">Complete</div>
-									</div>
-									<div class="withdrawls__item">
-										<div class="withdrawls__item-type">2 Level</div>
-										<div class="withdrawls__item-data">TLJst.....CHKf</div>
-										<div class="withdrawls__item-amount">
-											<img src="img/main/investments/coint.svg" alt="point">
-											389.02 Matic
-										</div>
-										<div class="withdrawls__item-status satus-red">Cancel</div>
-									</div>
-									<div class="withdrawls__item">
-										<div class="withdrawls__item-type">1 Level</div>
-										<div class="withdrawls__item-data">TLJst.....CHKf</div>
-										<div class="withdrawls__item-amount">
-											<img src="img/main/investments/coint.svg" alt="point">
-											389.02 Matic
-										</div>
-										<div class="withdrawls__item-status">Complete</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-
-
-			<div class="how">
-				<div class="how__container">
-					<div class="how__title title">how it works?<span class="text-line"></span></div>
-					<div class="how__content">
-
-						<div class="how__items">
-							<div class="how__item item-how">
-								<div class="item-how__block-picture">
-									<div class="item-how__main-picture">
-										<img src="img/main/how/items/1.png" alt="picture">
-									</div>
-									<div class="item-how__num">
-										01
-									</div>
-								</div>
-								<div class="item-how__block-text">
-									<div class="item-how__title">Crypto wallet</div>
-									<div class="item-how__text">To start investing users must be logged in to a crypto wallet The most popular Tron wallets that have the most users are Tronlink, TronWallet.</div>
-								</div>
-							</div>
-							<div class="how__item item-how">
-								<div class="item-how__block-picture">
-									<div class="item-how__main-picture">
-										<img src="img/main/how/items/2.png" alt="picture">
-									</div>
-									<div class="item-how__num">
-										02
-									</div>
-								</div>
-								<div class="item-how__block-text">
-									<div class="item-how__title">Smart Conctract</div>
-									<div class="item-how__text">X2tron smart contract generates 20% of the investment amount daily and guarantees a final profit of 200% in 10 days.</div>
-								</div>
-							</div>
-							<div class="how__item item-how">
-								<div class="item-how__block-picture">
-									<div class="item-how__main-picture">
-										<img src="img/main/how/items/3.png" alt="picture">
-									</div>
-									<div class="item-how__num">
-										03
-									</div>
-								</div>
-								<div class="item-how__block-text">
-									<div class="item-how__title">Investment profit</div>
-									<div class="item-how__text">The profit (dividends) accrued to your account on a daily basis and in real-time. You can withdraw the dividends at any time.
-									</div>
-								</div>
-							</div>
-							<div class="how__item item-how">
-								<div class="item-how__block-picture">
-									<div class="item-how__main-picture">
-										<img src="img/main/how/items/4.png" alt="picture">
-									</div>
-									<div class="item-how__num">
-										04
-									</div>
-								</div>
-								<div class="item-how__block-text">
-									<div class="item-how__title">Referral rewards</div>
-									<div class="item-how__text">The two-level referral program allows earning 7% + 3% from invited investors.</div>
-								</div>
-							</div>
-						</div>
-						<div class="how__buttons">
-							<a class="how__button" href="#"><span>Start investment</span>
-								<span><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15.0496 6.23035L1.04956 6.23035" stroke="#080828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-										<path d="M10.0496 11.2303L15.0496 6.23035" stroke="#080828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-										<path d="M10.0496 1.23035L15.0496 6.23035" stroke="#080828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-									</svg></span></a>
-						</div>
-					</div>
-				</div>
-
-
-			</div>
-
-		</main>
-		<footer class="footer">
-			<div id="fix" class="fix"></div>
-			<div class="footer__container">
-				<div class="footer__content">
-					<div class="footer__block-logo">
-						<a class="logo" href="#">
-							<span class="logo__brand">
-								<img src="img/header/logo.svg" alt="logo">
-							</span>
-							<span class="logo__text">
-								<img src="img/header/logo-text.svg" alt="logo">
-							</span>
-						</a>
-					</div>
-					<div class="footer__menu menu">
-						<button class="menu__button-footer">
-							<span class="menu__icons">
-								<span class="arrow-icon">
-									<span class="arrow-icon__tip"></span>
-								</span>
-							</span>
-						</button>
-
-
-						<div class="menu__body-wrap-footer">
-							<nav class="menu__footer">
-								<div class="first__picture header-picture">
-									<div class="first__block-picture">
-										<div class="first__picture-block-text">
-											<div class="text-procent">
-												<div class="text-procent__num">5%</div>
-												<div class="text-procent__text">everyday <span class="yellow-color">60 days</span></div>
-											</div>
-										</div>
-										<div class="first__picture">
-											<img src="img/main/first/phone.png" alt="phone">
-										</div>
-									</div>
-								</div>
-								<ul class="menu__list list-footer">
-									<li class="menu__item"><a class="menu__link" href="#home">Home <span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												</svg>
-											</span></a></li>
-									<li class="menu__item"><a class="menu__link" href="#about">About<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												</svg>
-											</span></a></li>
-									<li class="menu__item"><a class="menu__link" href="#ref">Referral program<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												</svg>
-											</span></a></li>
-									<li class="menu__item"><a class="menu__link" href="#">Contacts<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												</svg>
-											</span></a></li>
-									<li class="menu__item"><a class="menu__link" href="#">FaQ<span class="arrow-link"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M15 6L1 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 11L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													<path d="M10 1L15 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-												</svg>
-											</span></a></li>
-
-								</ul>
-
-							</nav>
-						</div>
-
-					</div>
-
-					<div class="footer__buttons">
-						<a data-da=".list-footer , 550" class="menu__button-support" href="#">
-							<img src="img/header/telegram.svg" alt="telegram">
-							<span>Support</span>
-						</a>
-						<a class="footer__button" href="#">
-							<img src="img/header/fox.jpg" alt="fox">
-							<span>Connect wallet</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<div class="rootpage__tnx">
+			<h2>Спасибо за заказ!</h2>
+			<p>Буду рад хорошему отзыву.</p>
+			<p>Обращайтесь еще!</p>
+		</div>
+		<div class="rootpage__contacts">
+			<h2>Мои контакты:</h2>
+			<p>Телеграм: <a href="tel:+380992511793">+380992511793</a></p>
+		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230113141217"></script>
 </body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background: #0F091D;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ffffff
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #ffffff;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		min-width: 100%;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		text-align: center;
+		color: #ffffff;
+		font-size: 2.5rem;
+		line-height: 120%;
+		margin: 0px 0px 1.25rem 0px;
+		position: relative;
+		z-index: 2;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			text-align: center;
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+			position: relative;
+			z-index: 2;
+		}
+	}
+
+	h2 {
+		color: #ffffff;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+		position: relative;
+		z-index: 2;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+			position: relative;
+			z-index: 2;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		position: relative;
+		border-radius: 15px;
+		padding: 20px 65px;
+		line-height: 140%;
+		border: 1px solid white;
+
+	}
+
+	.rootpage__tnx::after {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 800px;
+		height: 800px;
+		background: url('img/main/decor.png') no-repeat;
+		background-size: 100% 100%;
+		z-index: -1;
+
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 15px;
+			padding: 20px;
+			margin: 0 auto;
+		}
+
+		.rootpage__tnx::after {
+			position: absolute;
+			content: "";
+			top: calc(-100% - 200px);
+			left: 20%;
+			width: 400px;
+			height: 400px;
+			background: url('img/main/decor.png') no-repeat;
+			background-size: 100% 100%;
+			z-index: 1;
+			transform: rotate(45deg);
+
+		}
+	}
+
+	.rootpage__contacts {
+
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.rootpage__contacts a {
+		color: #ffffff;
+
+	}
+
+	.rootpage__tnx {
+		text-align: center;
+
+
+		margin: 0 auto;
+		margin-bottom: 1em;
+	}
+</style>
 
 </html>
